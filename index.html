@@ -1,6 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <h1>Hello world</h1>
-  </body>
+	<head>
+		<style>
+html {
+	color-scheme: light dark;
+}
+
+body {
+	font: 100% system-ui;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+	display: grid;
+	place-items: center;
+}
+
+@media (prefers-color-scheme: light) {
+:root {
+	--primary: hsl(174, 40%, 40%);
+}
+}
+
+@media (prefers-color-scheme: dark) {
+:root {
+	--primary: hsl(174, 40%, 50%);
+}
+}
+
+h1 {
+	color: var(--primary);
+}
+		</style>
+	</head>
+	<body>
+		<h1>Daniel Cousens</h1>
+	</body>
 </html>
